@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #ff6700;
+  --brown: #663300;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a,
+p {
+  font-family: var(--font-poppins);
+}
+
+h1 {
+  font-family: var(--font-oswald);
+}
+
+h2 {
+  font-family: var(--font-plus-jakarta-sans);
+}
+
+.title {
+  font-family: var(--font-oswald);
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.service-title {
+  font-family: var(--font-plus-jakarta-sans);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.stylish-gradient-text {
+  font-family: var(--font-oswald);
+}
+
+.stylish-text {
+  font-size: 48px;
+  font-weight: 900;
+  font-family: var(--font-oswald);
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.service-stylish-text {
+  font-size: 48px;
+  font-weight: 900;
+  font-family: var(--font-oswald);
+  color: #fff;
+  text-shadow: -1px -1px 0 #cfcfcf, 1px -1px 0 #cfcfcf, -1px 1px 0 #cfcfcf, 1px 1px 0 #cfcfcf;
+}
+
+.headline {
+  font-family: var(--font-oswald);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.highlight.brown {
+  color: var(--brown);
+}
+
+.highlight.orange {
+  color: var(--primary);
+}
